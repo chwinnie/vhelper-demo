@@ -1,0 +1,3 @@
+<h1>Vhelper Demo V1</h1>
+
+<p>Made in <2 hrs to demo idea to autism parents/researchers. Vhelper is essentially a wrapper around Youtube that allows for precise tracking of what an autistic child is watching. Many autistic children love to watch the same videos over and over. This app aimed to help researchers/parents/teachers understand the pattern in what an autistic child is watching by collecting data. V2 recommends videos that are similar to the child's past viewing history, just like Youtube's Recommended Videos does, but show newer material than Youtube to encourage the child to branch out and explore new topics. V2 could not be uploaded due to copyright with partners.</p>
