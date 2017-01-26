@@ -1,0 +1,17 @@
+<div class="flex p2">
+	<div class="flex flex-column p1">
+		<youtube-video class="mb1" video-id="videoId" player="mainPlayer" player-vars="{autoplay: 1}"></youtube-video>
+		<div class="flex">
+			<button class="btn btn-primary flex-none" ng-click="goBack()">Back</button>
+		</div>
+	</div>
+	<div class="flex flex-column p1" ng-if="relatedVideoIds && relatedVideoIds.length > 0">
+		<h2>Related Videos</h2>
+		<div class="flex flex-column">
+			<div ng-repeat="videoId in relatedVideoIds">
+				<youtube-video player-width="'100%'" player-height="'200px'" class="mb1" video-id="videoId" ></youtube-video>
+			</div>
+		</div>
+	</div>
+	
+</div>

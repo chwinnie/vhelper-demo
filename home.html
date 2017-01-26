@@ -1,0 +1,33 @@
+<nav class="navbar navbar-default navbar-fixed-top bg-info">
+  <div class="container">
+    <div class="flex">
+		<input ng-if="$root.mode === 'type'" type="text" class="mr1" ng-model="search.query" style="color: black;"/>	
+		<div class="flex mr2">
+			<div class="mr1">Mode Settings</div>
+			<div class="btn-group">
+			    <label class="btn btn-primary" ng-model="mode" uib-btn-radio="'click'">Click</label>
+			    <label class="btn btn-primary" ng-model="mode" uib-btn-radio="'type'">Type</label>
+			</div>
+		</div>
+
+		<div class="flex">
+			<div class="mr1">Related Video Settings</div>
+			<div class="btn-group">
+			      <label class="btn btn-primary" ng-model="allowRelatedVideos" uib-btn-radio="true">On</label>
+			    <label class="btn btn-primary" ng-model="allowRelatedVideos" uib-btn-radio="false">Off</label>
+			</div>
+		</div>
+
+	</div>
+  </div>
+</nav>
+<div class="p4">
+	<div class="flex flex-wrap space-between">
+		<div class="flex flex-column" ng-repeat="item in videoList">
+			<div class="m1 p1" style="border: 5px solid gray;">
+				<h4>{{item.name}}</h4>
+				<img ng-click="clickedVideo(item.id)" width="270" height="200" src="http://img.youtube.com/vi/{{item.id}}/0.jpg"/>
+			</div>
+		</div>	
+	</div>
+</div>

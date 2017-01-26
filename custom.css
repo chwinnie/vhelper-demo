@@ -1,0 +1,11 @@
+.highlighted {
+	background: yellow;
+}
+
+.selected {
+	font-size: 3rem;
+}
+
+.width-r-60 {
+	width: 60rem;
+}
